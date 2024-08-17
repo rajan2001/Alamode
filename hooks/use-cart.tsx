@@ -6,7 +6,7 @@ import toast from 'react-hot-toast'
 import { create } from 'zustand'
 import { createJSONStorage, persist } from 'zustand/middleware';
 
-export const useCart = create(persist((set, get) => ({
+export const useCart = create(persist((set) => ({
     items: [],
     setItems: (data: ProductProps[]) => set({ items: data }),
     additem: (data: ProductProps) => set((state: any) => {

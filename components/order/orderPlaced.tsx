@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button"
 import { useCart } from "@/hooks/use-cart"
 import { format } from "date-fns"
 import { CldImage } from "next-cloudinary"
+
+
 const OrderPlaced = () => {
     const cart: any = useCart()
     return <section className="py-24 relative">
@@ -58,7 +60,7 @@ const OrderPlaced = () => {
                                         <div className="col-span-5 lg:col-span-1 flex items-center max-lg:mt-3">
                                             <div className="flex gap-3 lg:block">
                                                 <p className="font-medium text-sm leading-7 text-black">price</p>
-                                                <p className="lg:mt-4 font-medium text-sm leading-7 text-indigo-600">{item.count * item.price}</p>
+                                                <p className="lg:mt-4 font-medium text-sm leading-7 text-black ">{item.count * item.price}</p>
                                             </div>
                                         </div>
                                         <div className="col-span-5 lg:col-span-2 flex items-center max-lg:mt-3 ">
